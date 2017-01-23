@@ -18,17 +18,7 @@ var ticTacToe = function() {
      board[7] + ' | ' + board[8] + ' | ' + board[9];
   };
   console.log(buildBoard())
-  var winningBoard = function() {
-    return 
-    board[1] === board[5] === board[9] !== ' ' || 
-    board[3] === board[5] === board[7] !== ' ' || 
-    board[1] === board[2] === board[3] !== ' ' || 
-    board[4] === board[5] === board[6] !== ' ' || 
-    board[7] === board[8] === board[9] !== ' ' ||
-    board[1] === board[4] === board[7] !== ' ' || 
-    board[2] === board[5] === board[8] !== ' ' || 
-    board[3] === board[6] === board[9] !== ' ';
-  }
+  var winningBoard = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]];
 }
 
 ticTacToe();
